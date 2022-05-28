@@ -2321,6 +2321,8 @@ static int qg_psy_set_property(struct power_supply *psy,
 	case POWER_SUPPLY_PROP_SDAM_SOC:
 		rc = qg_set_sdam_soc(chip, pval->intval);
 		break;
+	case POWER_SUPPLY_PROP_TYPEC_MODE:
+		return -ENODATA;
 	default:
 		break;
 	}
