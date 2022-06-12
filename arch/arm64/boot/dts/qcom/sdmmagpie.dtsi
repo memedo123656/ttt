@@ -464,6 +464,7 @@
 
 	chosen {
 		bootargs = "rcupdate.rcu_expedited=1 rcu_nocbs=0-7 quiet noirqdebug usbcore.autosuspend=7 kpti=off mitigations=off nosoftlockup mce=ignore_ce";
+		rng-seed = <0x12345678>;
 	};
 
 	soc: soc { };
